@@ -3,6 +3,13 @@
 <head>
 <title>Hello World!</title>
 <link rel="stylesheet" href="bluestyle.css">
+<script>
+function hora() {
+	var hoy = Date.now();
+	document.getElementById("hora").innerHTML = hoy.toLocaleString();
+	return;
+}
+</script>
 </head>
 <body>
 
@@ -19,6 +26,10 @@ style="width:100%;max-width:960px"></div>
 
 <div><img src="img_hola_git.jpg" alt="Hello GIT"
 style="width:100%;max-width:256px"></div>
+
+<p><span id="hora">00:00:00</span> </p>
+
+<script>hora();</script>
 
 </body>
 </html>
